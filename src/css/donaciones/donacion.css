@@ -1,0 +1,101 @@
+.donaciones{
+    width: 100%;
+    height: 80vh;
+    margin-top: 60px;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+
+.donacion-fondo{
+    fill: #5999B9;
+    z-index: 0;
+}
+
+.donaciones .titulo-donaciones{
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin: 45px auto;
+    font-size: 45px;
+}
+
+.donaciones .seccion-donacion{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.donaciones .seccion-donacion .intro-donaciones, .donacion{
+    width: 40%;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 19px;
+}
+
+.donaciones .seccion-donacion .intro-donaciones .icono-intro-donaciones{
+    width: 40px;
+    height: 40px;
+    border-radius: 50% 50% 50% 50%;
+    border: 3px solid #fff;
+    padding: 25px;
+    text-align: center;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.donaciones .seccion-donacion .intro-donaciones .contenido-intro-donaciones{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.donaciones .seccion-donacion .donacion .donacion-encabezado{
+    width: 100%;
+}
+
+.donaciones .seccion-donacion .donacion .donacion-encabezado img{
+    width: 100%;
+}
+
+.donaciones .seccion-donacion .donacion .donacion-cuenta{
+    font-size: 28px;
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+}
+
+@media(max-width: 906px){
+    .donaciones{
+        height: auto;
+    }
+    .donaciones .seccion-donacion{
+        width: 90%;
+        padding-bottom: 45px;
+    }
+    .donaciones .seccion-donacion .donacion .donacion-cuenta{
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 786px){
+    .donaciones .seccion-donacion{
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .donaciones .seccion-donacion .intro-donaciones, .donacion{
+        width: 80%;
+        padding: 25px 0;
+    }
+}

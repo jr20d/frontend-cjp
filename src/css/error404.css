@@ -1,0 +1,36 @@
+.contenedor-error{
+    width: calc(100% - 20px);
+    height: 100vh;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-error .img-error{
+    min-width: 350px;
+    max-width: 550px;
+}
+
+.contenedor-error .img-error, .titulo-error, .parrafo-error, .enlace-error{
+    margin: 25px 0;
+    color: rgb(40, 125, 196);
+    text-align: center;
+}
+
+.contenedor-error .parrafo-error{
+    font-size: 20px;
+}
+
+.contenedor-error .enlace-error{
+    text-decoration: none;
+    padding: 15px 10px;
+    border: 2px solid rgb(40, 125, 196);
+    border-radius: 10px;
+}
+
+.contenedor-error .enlace-error:hover{
+    background-color: rgb(40, 125, 196);
+    color: #fff;
+}

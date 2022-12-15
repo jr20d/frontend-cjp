@@ -1,0 +1,122 @@
+
+/*
+    Estilos para el slider
+*/
+.contenedor-banner{
+    background: linear-gradient(0deg, rgb(0, 0, 0), rgb(99, 94, 94));
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    max-height: 75vh;
+    margin-top: 80px;
+    display: block;
+}
+
+.contenedor-banner .banner{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: block;
+    width: auto;
+    height: 100%;
+    opacity: 0.6;
+}
+
+.contenedor-banner .banner-texto{
+    position: absolute;
+    text-align: center;
+    max-width: 35%;
+    max-height: 250px;
+    overflow: hidden;
+    top: 50%;
+    color: #fff;
+    left: 0%;
+    opacity: 0;
+    transition: opacity ease-in 0.7s, left ease-in 0.7s;
+    font-size: 25px;
+    padding: 15px 25px;
+}
+
+.contenedor-banner .banner-texto span{
+    font-size: 20px;
+    top: 50%;
+}
+
+#atras{
+    left: 0;
+}
+
+#siguiente{
+    right: 0;
+}
+
+.controles{
+    position: absolute;    
+    font-size: 35px;
+    top: 10%;
+    color: #fff;
+    padding: 150px 15px;
+    cursor: pointer;
+}
+
+@media(max-width: 1140px){
+    .contenedor-banner .banner-texto{
+        top: 40%;
+    }
+}
+
+@media(max-width: 915px){
+
+    .contenedor-banner{
+        margin-top: 0;
+        height: 70vh;
+    }
+
+    .contenedor-banner .banner{
+        opacity: 0.5;
+    }
+
+    #atras{
+        top: 20%;
+    }
+    
+    #siguiente{
+        top: 20%;
+    }
+
+    .contenedor-banner .banner-texto{
+        opacity: 1;
+        background-color: transparent;
+        width: 70%;
+        max-width: 80%;
+        margin: auto auto;
+        top: 25%;
+        left: 15%;
+        bottom: 0%;
+        opacity: 0;
+        transition: opacity ease-in 0.7s, bottom ease-in 0.7s;
+    }
+}
+
+@media(max-width: 750px){
+    .contenedor-banner{
+        height: 70vh;
+    }
+    .contenedor-banner .banner-texto{
+        width: 65%;
+        right: 10%;
+        opacity: 0;
+        transition: opacity ease-in 0.7s, bottom ease-in 0.7s;
+    }
+}
+
+@media(max-width: 396px){
+    .contenedor-banner .banner-texto{
+        width: 80%;
+    }
+    .contenedor-banner .banner-texto span{
+        font-size: 15px;
+        line-height: 0;
+    }
+}
