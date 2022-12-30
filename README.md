@@ -1,2 +1,4 @@
-# cjp
- Aplicacion cliente web hecho en react para la Asociación Casa Juvenil de Paz
+# Sitio web para consumir los endpoints de la api relacionado a las noticias
+##Herramientas utilizadas
+* ReactJS
+* Fetch API
